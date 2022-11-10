@@ -26,23 +26,24 @@ public class Calculator {
 
 Write a program to check if a even number is palindrome or not
 
+
 public class Palindrome {
 
     public static void main(String[] args) {
 
-        int num = 121, reversedInteger = 0, remainder, originalInteger;
+        int num = 121, reversedInteger = 0, remainder, originalInteger; //declaring variables num, reversedInteger, remainder, originalInteger
 
-        originalInteger = num;
+        originalInteger = num; //assigning value of num to originalInteger
 
-        // reversed integer is stored in variable 
+        // reversed integer is stored in variable reversedInteger
         while( num != 0 )
         {
-            remainder = num % 10;
-            reversedInteger = reversedInteger * 10 + remainder;
-            num  /= 10;
+            remainder = num % 10; //getting remainder of num
+            reversedInteger = reversedInteger * 10 + remainder; //reversing the number and storing it in reversedInteger
+            num  /= 10; //getting quotient of num
         }
 
-        // palindrome if orignalInteger and reversedInteger are equal
+        // palindrome if originalInteger and reversedInteger are equal
         if (originalInteger == reversedInteger)
             System.out.println(originalInteger + " is a palindrome.");
         else
