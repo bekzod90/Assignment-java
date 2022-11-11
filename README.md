@@ -50,3 +50,22 @@ public class Palindrome {
             System.out.println(originalInteger + " is not a palindrome.");
     }
 }
+
+
+//Write a program to find if numbers which are divisible by 23 between 10 to 150
+
+public class DivisibleBy23 {
+
+	public static void main(String[] args) {
+		
+		for(int i=10; i<=150; i++) { //for loop to iterate from 10 to 150
+			if(isDivisibleBy23(i)) { //if condition to check if the number is divisible by 23
+				System.out.println(i); //printing the number if it is divisible by 23
+			}
+		}
+	}
+	
+	public static boolean isDivisibleBy23(int number) { //method 
+		return number%23==0;
+	}
+}
