@@ -59,13 +59,9 @@ public class DivisibleBy23 {
 	public static void main(String[] args) {
 		
 		for(int i=10; i<=150; i++) { //for loop to iterate from 10 to 150
-			if(isDivisibleBy23(i)) { //if condition to check if the number is divisible by 23
-				System.out.println(i); //printing the number if it is divisible by 23
+			if(i%23==0) { //if condition to check if the number is divisible by 23
+				System.out.println(i); //print the number
 			}
 		}
-	}
-	
-	public static boolean isDivisibleBy23(int number) { //method 
-		return number%23==0;
 	}
 }
